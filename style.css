@@ -1,0 +1,148 @@
+/* General Body Styling */
+body {
+  background-color: #f0f8ff;
+  color: #333333;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Card Styling */
+.card-white {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Centered Text Styling */
+.text-center {
+  text-align: center;
+}
+
+/* Profile Image Styling */
+.img-circle {
+  border-radius: 50%;
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border: 3px solid #4CAF50;
+}
+
+/* Button Styling for Link */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
+/* Section Heading Styling */
+.section-heading {
+  color: #4CAF50;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Text Styling */
+.intro-text, .section-text {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Social Links Styling */
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.list-inline > li {
+  display: inline;
+}
+
+/* Social Icons Styling */
+.social-icon .fa-brands {
+  color: #333333;
+  font-size: 28px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover .fa-brands {
+  color: #FF6347;
+  transform: scale(1.1);
+}
+
+/* Responsive Design using Media Queries */
+@media (max-width: 960px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .img-circle {
+    max-width: 80px;
+  }
+
+  .section-heading {
+    font-size: 20px;
+  }
+
+  .intro-text, .section-text {
+    font-size: 14px;
+  }
+
+  .social-icon .fa-brands {
+    font-size: 24px;
+  }
+}
